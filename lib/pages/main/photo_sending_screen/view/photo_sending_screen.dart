@@ -150,7 +150,7 @@ class _PhotoSendingScreenState extends State<PhotoSendingScreen> {
                                         isPhotoAccess) {
                                       setState(() => isFieldsFills = false);
                                       GetIt.I<AppRouter>().push(
-                                        ThanksRoute(isSuccess: true),
+                                        ThanksRoute(isSuccess: false),
                                       );
                                     } else {
                                       setState(() => isFieldsFills = true);

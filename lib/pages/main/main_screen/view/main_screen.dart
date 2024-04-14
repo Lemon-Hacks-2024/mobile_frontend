@@ -2,8 +2,6 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
-import 'package:get_it/get_it.dart';
-import 'package:lemon/config/config.dart';
 import 'package:lemon/core/core.dart';
 import 'package:lemon/pages/main/main_screen/main_screen.dart';
 
@@ -86,11 +84,7 @@ class _MainCameraScreenState extends State<MainCameraScreen> {
                         AppIconButton(
                           icon: CustomIcons.question,
                           size: width * 0.10256,
-                          onIconPressed: () {
-                            GetIt.I<AppRouter>().push(
-                              ThanksRoute(isSuccess: true),
-                            );
-                          },
+                          onIconPressed: () {},
                         ),
                       ],
                     ),
